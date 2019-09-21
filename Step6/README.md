@@ -123,3 +123,45 @@ processPrediction()
     appContainer.querySelector(".resultText").innerHTML = result;
     appRestartButton.classList.remove('hide');
 ```    
+
+
+## Workaround when getUserMedia is not supported
+
+### Changes in public/index.html
+```HTML
+<div class="appUserInput">
+    <label class="photoUploadLabel hide" for="photoUpload"> 
+        <input type="file" accept="image/jpeg" id="photoUpload" data- 
+        role="none" capture="camera"/> 
+    </label>
+...
+```
+
+### Changes in public/js/app.js
+```javascript
+// Initialize camera
+function bindCamera(videoElement) {
+    ...
+    } else {
+        console.log("getUserMedia not supported");
+        appContainer.querySelector(".appCanvasContainer").classList.add('hide');
+        appContainer.querySelector(".photoUploadLabel").classList.remove('hide');
+        const canvasElement = document.querySelector("canvas");
+        const canvasContext = canvasElement.getContext('2d');
+        const image = new Image();
+        image.onload = () => {
+            appContainer.querySelector(".appCanvasContainer").classList.remove('hide');
+            canvasElement.classList.remove('hide');
+            canvasContext.drawImage(image,
+                0, 0, image.width, image.height,
+                0, 0, canvasElement.width, canvasElement.height);
+            submitImageFromCanvas(canvasElement);
+            URL.revokeObjectURL(image.src);
+        };
+        document.getElementById("photoUpload").addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            image.src = URL.createObjectURL(file);
+        });
+    }
+}
+```
