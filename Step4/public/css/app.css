@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} 
+
+.appContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+/** Video + canvas **/
+
+.appContainer .appUserInput {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.appContainer video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.appUserInput .appCanvasContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.appContainer .appCanvasContainer .appCanvas {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+/** Results panel **/
+.appContainer .appPanel {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    background: #3c3c3c;
+    color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.appPanel .appResults {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.appResults .answer {
+    flex: 0;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+.appResults .answer .value {
+    font-weight: bold;
+}
+
+.appPanel .appRestart {
+    flex: 1 0 0;
+    align-self: center;
+}
+
+.appPanel .appRestartButton {
+    padding: 0.25em 0.5em;
+    font-size: 1em;
+    border-radius: 1em;
+}
+
+.hide {
+    display: none!important;
+}

@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} 
+
+.appContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+/** Video + canvas **/
+
+.appContainer .appUserInput {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.appContainer video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.appUserInput .appCanvasContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.appContainer .appCanvasContainer .appCanvas {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}

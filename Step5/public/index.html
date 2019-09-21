@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>Rock-paper-scissors</title>
+  <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="appContainer" id="appContainer">
+    <div class="appPanel">
+        <div class="appResults" id="appResults">
+          <div class="answer"><span>User:&nbsp;</span><span class="appUserAnswer value">-</span></div>
+          <div class="answer"><span>AI:&nbsp;</span><span class="appEngineAnswer value">-</span></div>
+        </div>
+        <div class="appRestart"><button id="appRestartButton" class="appRestartButton hide">NEW GAME</button></div>
+    </div>
+    <div class="appUserInput">
+          <video id="video" autoplay></video>
+          <div class="appCanvasContainer">
+              <canvas class="appCanvas" id="myCanvas"></canvas>
+          </div>
+    </div>
+    <div class="appVersusLabel"></div>
+    <div class="appEnginePick"></div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
