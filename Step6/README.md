@@ -127,6 +127,13 @@ processPrediction()
 
 ## Workaround when getUserMedia is not supported
 
+### Add to public/css/app.css
+```CSS
+.photoUploadLabel.hide {
+    display: none;
+}
+```
+
 ### Changes in public/index.html
 ```HTML
 <div class="appUserInput">
@@ -165,3 +172,4 @@ function bindCamera(videoElement) {
     }
 }
 ```
+

@@ -169,3 +169,6 @@ html, body {
     visibility: hidden;
 }
 
+.photoUploadLabel.hide {
+    display: none;
+}
