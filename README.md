@@ -2,8 +2,8 @@
 languages:
 - javascript
 products:
-- Azure Cognitive Services
-- Azure Custom Vision
+- azure
+- azure-cognitive-services
 page_type: sample
 description: "Code and tutorial for "Rock-paper-scissors" game used at Azure Custom Vision hands-on workshop"
 urlFragment: "rock-paper-scissors-customvision"
