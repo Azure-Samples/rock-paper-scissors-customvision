@@ -106,6 +106,28 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
   ![Open your resource group and verify that you have the following resources: App Service Plan, App Service and two Cognitive Services](assets/screenshots/0_resource_group_list_final.JPG)
 
+* Open your new Web App, go to "Configuration" -> "Application Settings" 
+
+  ![Open your new Web App, go to Configuration -> Application Settings](assets/screenshots/0_resource_webapp_settings.png)
+
+* Click "New application setting"
+
+  ![Click New application setting](assets/screenshots/0_resource_webapp_settings_new.png)
+  
+* Setting name is "SCM_DO_BUILD_DURING_DEPLOYMENT" and value "true"
+
+  ![Setting name is SCM_DO_BUILD_DURING_DEPLOYMENT and value true](assets/screenshots/0_resource_webapp_settings_new_form.png)
+
+* Click "OK"
+
+  ![Click OK](assets/screenshots/0_resource_webapp_settings_new_form_ok.png)
+
+* Click "Save"
+
+  ![Click Save](assets/screenshots/0_resource_webapp_settings_updated_save.png)
+
+* This will enable build step when we deploy our NodeJS application later
+
 ## Custom Vision
 
 ### Sign in https://www.customvision.ai/ using created Azure account 
@@ -210,21 +232,20 @@ Application based on code from [NodeJS app on Azure](https://docs.microsoft.com/
 * public/js/app.js - WebApp Javascript logic
 
 ### Local development 
-Local development is the same for all steps:
+Local development is the same for all the steps:
 1. Open "StepN" folder
 2. Run `npm install`
 3. Run `npm start`
 4. Open http://localhost:1337
 
 ### Azure deployment 
-Azure dseployment is the same for all steps:
+Azure deployment is the same for all the steps:
 1. Open "StepN" folder
-2. Run `npm install`
-3. Create zip archive with contents of "StepN" folder
-4. Open <choose_unique_name>.scm.azurewebsites.net
-5. navigate to Tools -> Zip Push Deploy
-6. Drag-and-drop zip archive to /wwwroot
-7. Open <choose_unique_name>.azurewebsites.net and verify that site is running
+2. Create zip archive with contents of "StepN" folder, except for node_modules folder
+3. Open <choose_unique_name>.scm.azurewebsites.net
+4. navigate to Tools -> Zip Push Deploy
+5. Drag-and-drop zip archive to /wwwroot
+6. Open <choose_unique_name>.azurewebsites.net and verify that site is running
 
 Code changes are described in respective steps:
 
