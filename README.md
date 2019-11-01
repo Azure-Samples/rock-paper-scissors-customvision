@@ -1,15 +1,14 @@
-# Rock-paper-scissors
 ---
-page_type: sample
 languages:
 - javascript
 products:
 - Azure Cognitive Services
+- Azure Custom Vision
+page_type: sample
 description: "Code for "Rock-paper-scissors" game used at Azure Custom Vision hands-on workshop"
 urlFragment: "rock-paper-scissors-customvision"
 ---
-
-# Official Microsoft Sample
+# Rock-paper-scissors
 Code for "Rock-paper-scissors" game used at Azure Custom Vision hands-on workshop.
 
 ## Contents
