@@ -1,12 +1,12 @@
----
-languages:
-- javascript
-products:
-- azure
-- azure-cognitive-services
+--- 
+description: "Code and tutorial for Rock-paper-scissors game used at Azure Custom Vision hands-on workshop"
+languages: 
+  - javascript
 page_type: sample
-description: "Code and tutorial for "Rock-paper-scissors" game used at Azure Custom Vision hands-on workshop"
-urlFragment: "rock-paper-scissors-customvision"
+products: 
+  - azure
+  - azure-cognitive-services
+urlFragment: rock-paper-scissors-customvision
 ---
 
 # Rock-paper-scissors
