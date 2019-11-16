@@ -18,7 +18,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 | File/folder       | Description                                |
 |-------------------|--------------------------------------------|
-| `src`             | Sample source code.                        |
+| `Step*/src`             | Sample source code.                        |
 | `.gitignore`      | Define what to ignore at commit time.      |
 | `README.md`       | This README file.                          |
 | `LICENSE`         | The license for the sample.                |
