@@ -65,9 +65,9 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
   ![Click Create](assets/screenshots/0_resource_customvision_new.JPG "Click Create")
 
-* Fill-in the form (Name - "RPSCustomVision", Subscription - <your_subscription>, Resource group - "RPS_ResourceGroup", Location - "West Europe", Pricing tiers for training and predition - "F0") and click create. Wait until resource is created
+* Fill-in the form (Name - "RPSCustomVision", Subscription - <your_subscription>, Resource group - "RPS_ResourceGroup", Location - for training and predition - "West Europe", Pricing tiers for training and predition - "F0") and click create. Wait until resource is created
 
-  ![Fill-in the form and click create](assets/screenshots/0_resource_customvision_settings.JPG "Fill-in the form and click create")
+  ![Fill-in the form and click create](assets/screenshots/0_resource_customvision_settings.png "Fill-in the form and click create")
 
 ### Create a new AppService resource
 * Open your resource group and verify that you now have two resources with "Cognitive Service" type and click "Add" to add another resource
@@ -82,17 +82,17 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
   ![Click Create](assets/screenshots/0_resource_search_webapp.JPG "Click Create")
 
-* Fill-in the form (Subscription - <your_subscription>, Resource group name - "RPS_ResourceGroup", Name - <choose_unique_name>, Publish - "Code", "Runtime stack" - "Node 10.14", Operating system - "Windows", Region - "West Europe") and click "Change size" for App Service Plan
+* Fill-in the form (Subscription - <your_subscription>, Resource group name - "RPS_ResourceGroup", Name - <choose_unique_name>, Publish - "Code", "Runtime stack" - "Node 12", Operating system - "Windows", Region - "West Europe") and click "Change size" for App Service Plan
 
-  ![Fill-in the form and and click "Change size" for App Service Plan](assets/screenshots/0_resource_webapp_settings_1.JPG "Fill-in the form and and click Change size for App Service Plan")
+  ![Fill-in the form and and click "Change size" for App Service Plan](assets/screenshots/0_resource_webapp_settings_1.png "Fill-in the form and and click Change size for App Service Plan")
 
 * Select "Dev / Test" plan and "F1" pricing tier, then click "Apply"
 
   ![Select "Dev / Test" plan and "F1" pricing tier, then click "Apply"](assets/screenshots/0_resource_webapp_settings_2.JPG "Select Dev/Test plan and F1 pricing tier, then click Apply")
 
-* Click "Review and create"
+* Click "Review + create"
 
-  ![Click "Review and create"](assets/screenshots/0_resource_webapp_settings_3.JPG "Click Review and create")
+  ![Click "Review and create"](assets/screenshots/0_resource_webapp_settings_3.png "Click Review + create")
 
 * Verify values and click "Create"
 
@@ -135,7 +135,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 ### Create a new Custom Vision project
 * Click "New Project"
 
-![Click "New Project"](assets/screenshots/0_customvision_projects_blank.JPG)
+![Click "New Project"](assets/screenshots/0_customvision_projects_blank.png)
 
 * Fill-in the form (Name - "RPS", Resource - "RPSCustomVision[F0]", Project Type - "Classification", Classification Types - "MMulticlass", Domains - "General") and click "Create project"
 
@@ -161,9 +161,9 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 ![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.JPG)
 
-* Select "Fast Training" and click "Train"
+* Select "Quick Training" and click "Train"
 
-![Select "Fast Training" and click "Train"](assets/screenshots/0_customvision_project_train_setup.JPG)
+![Select "Quick Training" and click "Train"](assets/screenshots/0_customvision_project_train_setup.png)
 
 * Wait for training to finish
 
