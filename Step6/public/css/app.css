@@ -165,10 +165,40 @@ html, body {
     background-image: url('../img/scissors.png');
 }
 
-.hide {
-    visibility: hidden;
+
+/** Photo upload */
+.photoUploadLabel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5%;
+    height: 80%;
+    flex-wrap: wrap;
+    font-size: 1.3em;
+    border: 0.5em solid #3c3c3c;
+    border-radius: 50%;
+    text-transform: uppercase;
 }
 
+.photoUploadLabel:hover,
+.photoUploadLabel:active {
+    background: #3c3c3c;
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.photoUploadLabelText {
+    flex: 1 1 100%;
+    text-align: center;
+    padding-bottom: 0.8em;
+}
+
+.photoUploadInput {
+    font-size: 0.7em;
+}
 .photoUploadLabel.hide {
+    display: none;
+}
+.hide {
     display: none;
 }

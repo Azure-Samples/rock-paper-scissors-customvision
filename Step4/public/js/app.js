@@ -73,20 +73,14 @@ function init() {
 
     // Initialize camera
     function bindCamera(videoElement) {
-        // getMedia polyfill
-        navigator.getUserMedia = (navigator.getUserMedia ||
-            navigator.webkitGetUserMedia ||
-            navigator.mozGetUserMedia ||
-            navigator.msGetUserMedia);
-
         // Check that getUserMedia is supported
-        if (navigator.getUserMedia) {
-            navigator.getUserMedia(
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia(
                 // constraints
                 {
                     video: { facingMode: 'environment' },
                     audio: false
-                },
+                }).then(
                 // successCallback
                 function (localMediaStream) {
                     try {
@@ -96,7 +90,7 @@ function init() {
                     }
                     webcamStream = localMediaStream;
                     startCounter();
-                },
+                }).catch(
                 // errorCallback
                 function (err) {
                     console.log("The following error occured: " + err);
@@ -106,6 +100,7 @@ function init() {
             console.log("getUserMedia not supported");
         }
     }
+
 
     bindCamera(videoElement);
     appRestartButton.addEventListener("click", function(){

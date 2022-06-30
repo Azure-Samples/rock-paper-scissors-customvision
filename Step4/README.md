@@ -5,20 +5,13 @@ Goal:
 
 ## Changes in index.js
 ```javascript
-    const customVisionPostRequest = https.request(customVisionPostOptions, (predictionResponse) => {
-        predictionResponse.on('data', function (data) {
-            const customVisionResponse = JSON.parse(data);
-            const predictions = customVisionResponse.predictions;
-            console.log(predictions);
-            const mostLikelyPrediction = predictions.sort((a, b) => {
-                return (a.probability > b.probability) ? -1 :
-                    (a.probability === b.probability ? 0 : 1)
-                ;
-            })[0].tagName;
-            response.setHeader('Content-Type', 'text/json');
-            response.end(`{ "prediction": "${mostLikelyPrediction}" }`);
-        });
-    });
+    const mostLikelyPrediction = results.predictions.sort((a, b) => {
+        return (a.probability > b.probability) ? -1 :
+            (a.probability === b.probability ? 0 : 1)
+        ;
+    })[0].tagName;
+    response.setHeader('Content-Type', 'text/json');
+    response.end(`{ "prediction": "${mostLikelyPrediction}" }`);
 ```
 
 ## Changes in public/index.html
@@ -79,7 +72,7 @@ Goal:
 }
 
 .hide {
-    visibility: hidden;
+    display: none;
 }
 ```
 ### for .appContainer .appUserInput 

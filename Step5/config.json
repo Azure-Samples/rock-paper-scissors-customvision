@@ -1,6 +1,6 @@
 {
     "Key": "<PUT_YOUR_KEY_HERE>",
-    "ModelPath": "<PUT_PATH_TO_ITERATION_HERE>",
-    "ServerHost": "<PUT_HOST_SERVER_HERE>"
+    "PublishedIteration": "<PUT_PUBLISHED_ITERATION_HERE>",
+    "ProjectId": "<PUT_PROJECT_ID_HERE>",
+    "Endpoint": "<PUT_PREDICTION_ENDPOINT_HERE>"
 }
-  
