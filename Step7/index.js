@@ -9,9 +9,13 @@ const cvstfjs = require("@microsoft/customvision-tfjs-node");
     let labels;
     try {
         const data = fs.readFileSync('tf-js-model/labels.txt').toString();
-        labels = data.split('\n');
+        labels = data.split('\n').map(el => el.trim()).filter(el => el.length > 0);
     } catch {
         console.log("Could not load labels.txt");
+    }
+    if (!labels || labels.length === 0) {
+        console.log("No labels provided")
+        return;
     }
 
     let model;

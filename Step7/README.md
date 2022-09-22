@@ -7,6 +7,8 @@ Goal:
 
 - When creating Custom Vision project select a Compact pre-trained model (<SCREENSHOT>)
 
+![Project options](../assets/screenshots/0_export_model_0.png "Project options")
+
 - Press Export
 
 
