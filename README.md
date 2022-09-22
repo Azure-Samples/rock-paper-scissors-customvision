@@ -162,7 +162,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 2. **Select** the images and click **Open** to add them
 3. Write an appropriate **Tag** for your images (for example, paper), press **Enter** and click **Upload files**
 
-![Add images, select appropriate tag (e.g. paper) and click "Upload files"](assets/screenshots/0_customvision_project_addimages_paper.PNG)
+![Add images, select appropriate tag (e.g. paper) and click "Upload files"](assets/screenshots/0_customvision_project_addimages_paper.JPG)
 
 4. Wait until upload is finished
 
@@ -173,11 +173,11 @@ Outline the file contents of the repository. It helps users navigate the codebas
 ### Train a model
 1. In Custom Vision project click on **Train**
 
-![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.PNG)
+![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.png)
 
 2. Select **Quick Training** and click **Train**
 
-![Select "Quick Training" and click "Train"](assets/screenshots/0_customvision_project_train_setup.PNG)
+![Select "Quick Training" and click "Train"](assets/screenshots/0_customvision_project_train_setup.png)
 
 
 3. Wait for training to finish. This process can take a few minutes
@@ -188,17 +188,17 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 1. Click on **Quick Test**
 
-![Click on "Quick Test"](assets/screenshots/0_customvision_project_iteration_quicktest.PNG)
+![Click on "Quick Test"](assets/screenshots/0_customvision_project_iteration_quicktest.png)
 
 2. **Upload** a test image
 
-![Upload test image](assets/screenshots/0_customvision_project_iteration_quicktest_results.PNG)
+![Upload test image](assets/screenshots/0_customvision_project_iteration_quicktest_results.png)
 
 If the prediction of the test image is incorrect, you can correct it and select the right tag.
 
 1. Open **Predictions** tab
 
-![Click on "Predictions"](assets/screenshots/0_customvision_project_iteration_predictions.PNG)
+![Click on "Predictions"](assets/screenshots/0_customvision_project_iteration_predictions.png)
 
 2. **Select** the incorrectly predicted image
 
@@ -206,17 +206,17 @@ If the prediction of the test image is incorrect, you can correct it and select 
 
 3. **Assign** correct tag and click **Save and close**
 
-![Select incorrectly predicted image](assets/screenshots/0_customvision_project_iteration_predictions_detail.PNG)
+![Select incorrectly predicted image](assets/screenshots/0_customvision_project_iteration_predictions_detail.png)
 
 
 ### (Optional) Advanced training
 1. In Custom Vision project click **Train**
 
-![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.PNG)
+![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.png)
 
 2. Select **Advanced Training**, choose **1 hour** for training budget, and click **Train**
 
-![Select "Advanced Training" for 1 hour and click "Train"](assets/screenshots/0_customvision_project_train_setup_adv.PNG)
+![Select "Advanced Training" for 1 hour and click "Train"](assets/screenshots/0_customvision_project_train_setup_adv.png)
 
 3. Wait for training to finish
 
@@ -225,15 +225,15 @@ If the prediction of the test image is incorrect, you can correct it and select 
 ### Publish iteration
 1. Open **Performance** tab, select the finished iteration and click **Publish**
 
-![Open Performance tab, select the finished iteration and click Publish](assets/screenshots/0_customvision_project_iteration_publish.PNG)
+![Open Performance tab, select the finished iteration and click Publish](assets/screenshots/0_customvision_project_iteration_publish.png)
 
 2. Fill-in **Model name**, select **RPSCustomVision_Prediction** as prediction resource and click **Publish**
 
-![Fill-in model name, select "RPSCustomVision_Prediction" as prediction resource and click "Publish"](assets/screenshots/0_customvision_project_iteration_publish_setup_2.PNG)
+![Fill-in model name, select "RPSCustomVision_Prediction" as prediction resource and click "Publish"](assets/screenshots/0_customvision_project_iteration_publish_setup_2.JPG)
 
 3. Click on **Prediction URL** to see your credentials
 
-![Click on Prediction URL to see your credentials](assets/screenshots/0_customvision_project_iteration_prediction.PNG)
+![Click on Prediction URL to see your credentials](assets/screenshots/0_customvision_project_iteration_prediction.png)
 
 ## Web application code
 Application based on code from [NodeJS app on Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs) example.
