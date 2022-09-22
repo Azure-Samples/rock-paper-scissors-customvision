@@ -13,8 +13,6 @@ const cvstfjs = require("@microsoft/customvision-tfjs-node");
     } catch {
         console.log("Could not load labels.txt");
     }
-    if (!labels)
-        return;
 
     let model;
     try {
