@@ -18,10 +18,10 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 | File/folder       | Description                                |
 |-------------------|--------------------------------------------|
-| `Step{1-6}`       | Sample source code.                        |
-| `.gitignore`      | Define what to ignore at commit time.      |
-| `README.md`       | This README file.                          |
-| `LICENSE`         | The license for the sample.                |
+| `Step{1-6}`       | Sample source code                        |
+| `.gitignore`      | Define what to ignore at commit time      |
+| `README.md`       | The README file                         |
+| `LICENSE`         | The license for the sample             |
 
 ## Prerequisites
 
@@ -146,7 +146,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 3. Write an appropriate **Tag** for your images (for example, paper), press **Enter** and click **Upload files**
 :::image type="content" source="assets/screenshots/0_customvision_project_addimages_paper.png" alt-text="Add images, select appropriate tag (e.g. paper) and click "Upload files"":::
 4. Wait until upload is finished
-:::image type="content" source="assets/screenshots/0_customvision_project_addimages_uploaded.png" alt-text="Wait until upload is finished":::
+:::image type="content" source="assets/screenshots/0_customvision_project_addimages_uploaded.JPG" alt-text="Wait until upload is finished":::
 
 5. **Repeat** the process to add other group of images
 
@@ -158,7 +158,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 :::image type="content" source="assets/screenshots/0_customvision_project_train_setup.png" alt-text="Select "Quick Training" and click "Train"":::
 
 3. Wait for training to finish. This process can take a few minutes
-:::image type="content" source="assets/screenshots/0_customvision_project_train_done.png" alt-text="Wait for training to finish":::
+:::image type="content" source="assets/screenshots/0_customvision_project_train_done.JPG" alt-text="Wait for training to finish":::
 
 #### Manual validation
 
@@ -174,7 +174,7 @@ If the prediction of the test image is incorrect, you can correct it and select 
 :::image type="content" source="assets/screenshots/0_customvision_project_iteration_predictions.png" alt-text="Click on "Predictions"":::
 
 2. **Select** the incorrectly predicted image
-:::image type="content" source="assets/screenshots/0_customvision_project_iteration_predictions_list.png" alt-text="Select incorrectly predicted image":::
+:::image type="content" source="assets/screenshots/0_customvision_project_iteration_predictions_list.JPG" alt-text="Select incorrectly predicted image":::
 
 3. **Assign** correct tag and click **Save and close**
 :::image type="content" source="assets/screenshots/0_customvision_project_iteration_predictions_detail.png" alt-text="Select incorrectly predicted image":::
@@ -188,7 +188,7 @@ If the prediction of the test image is incorrect, you can correct it and select 
 :::image type="content" source="assets/screenshots/0_customvision_project_train_setup_adv.png" alt-text="":::
 
 3. Wait for training to finish
-:::image type="content" source="assets/screenshots/0_customvision_project_train_done.png" alt-text="Wait for training to finish":::
+:::image type="content" source="assets/screenshots/0_customvision_project_train_done.JPG" alt-text="Wait for training to finish":::
 
 ### Publish iteration
 1. Open **Performance** tab, select the finished iteration and click **Publish**
