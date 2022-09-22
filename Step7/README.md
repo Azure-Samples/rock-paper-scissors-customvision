@@ -14,7 +14,9 @@ Goal:
     - **Project Types**: Classification
     - **Classification Types**: Multiclass
     - **Domains**: General (compact)[S1]
-   
+
+![Project options](../assets/screenshots/0_export_model_0.png "Project options")
+
 4. Click **Create project**
 5. Follows the steps in [README.md](../README.md) file to [upload and tag images](../README.md#upload-and-tag-images), and [train a model](../README.md#train-a-model)
 
