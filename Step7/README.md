@@ -1,4 +1,4 @@
-# Step6
+# Step7
 Goal:
 * Download the Custom Vision model
 * Use it locally with tensorflow.js
