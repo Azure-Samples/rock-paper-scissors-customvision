@@ -35,19 +35,19 @@ Outline the file contents of the repository. It helps users navigate the codebas
 2. Click on **Create a resource**, search for **Resource group** in the Marketplace and click on it 
 3. Click on **Create** to create new resource group
 
-![Add new resource group](assets/screenshots/0_resource_group_blank.png "Add new resource group")
+![Add new resource group](assets/screenshots/0_resource_group_blank.PNG "Add new resource group")
   
 4. Fill-in the form the following information for your resource group:
     - **Subscription**: <your_subscription>
     - **Resource group** RPS_ResourceGroup 
     - **Region**: West Europe
  
-![Fill-in the form](assets/screenshots/0_resource_group_new.png "Fill-in the form")
+![Fill-in the form](assets/screenshots/0_resource_group_new.PNG "Fill-in the form")
 
 5.  Click **Review + create**
 6. Verify the values and click on **Create**
 
-![Verify the values and click create](assets/screenshots/0_resource_group_new_valid.png "Verify the values and click create")
+![Verify the values and click create](assets/screenshots/0_resource_group_new_valid.PNG "Verify the values and click create")
 
 7. Wait until the deployment of the resource group is complete and click on **Go to resource group**
 
@@ -56,11 +56,11 @@ Outline the file contents of the repository. It helps users navigate the codebas
 1. **Open** the resource group you have created. The resource group is empty
 2. Click on **Create resources** or **+ Create** to create a new resource
 
-  ![Create new resource](assets/screenshots/0_resource_group_list_res_blank.png "Create new resource")
+  ![Create new resource](assets/screenshots/0_resource_group_list_res_blank.PNG "Create new resource")
 
 3. Search for **Custom Vision** in the Marketplace and click on it
 
-  ![Search for "Custom Vision" in the Marketplace and click on it](assets/screenshots/0_resource_search.png "Search for Custom Vision in the Marketplace and click on it")
+  ![Search for "Custom Vision" in the Marketplace and click on it](assets/screenshots/0_resource_search.PNG "Search for Custom Vision in the Marketplace and click on it")
 
 4. Click **Create**
 5. Fill-in the form the following information for your Custom Vision resource:
@@ -72,7 +72,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
     - **Training pricing tier**: Free F0
     - **Prediction pricing tier**: Free F0
 
-![Fill-in the form and click create](assets/screenshots/0_resource_customvision_settings.png "Fill-in the form and click create")
+![Fill-in the form and click create](assets/screenshots/0_resource_customvision_settings.PNG "Fill-in the form and click create")
   
 6.  Click **Review + create**
 7. Verify the values and click on **Create**
@@ -82,11 +82,11 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 1. **Open** your resource group, verify that you now have two resources with **Custom Vision type** and click on **+ Create** to add another resource
 
- ![Open your resource group and verify that you now have two resources with "Cognitive Service" type and click "Add" to add another resource](assets/screenshots/0_resource_group_list_cv.png "Open your resource group and verify that you now have two resources with Cognitive Service type and click Add to add another resource")
+ ![Open your resource group and verify that you now have two resources with "Cognitive Service" type and click "Add" to add another resource](assets/screenshots/0_resource_group_list_cv.PNG "Open your resource group and verify that you now have two resources with Cognitive Service type and click Add to add another resource")
 
 2. Search for **Web App** in the Marketplace and click on it
 
-![Search for "Web App" in the Marketplace and click on it](assets/screenshots/0_resource_search_webapp.png "Search for Web App in the Marketplace and click on it")
+![Search for "Web App" in the Marketplace and click on it](assets/screenshots/0_resource_search_webapp.PNG "Search for Web App in the Marketplace and click on it")
 
 3. Click **Create**
 4. Fill-in the form the following information for your AppService resource:
@@ -100,47 +100,47 @@ Outline the file contents of the repository. It helps users navigate the codebas
    
 5. Click on **Change size** for App Service Plan
 
-![Fill-in the form and and click "Change size" for App Service Plan](assets/screenshots/0_resource_webapp_settings_1.png "Fill-in the form and and click Change size for App Service Plan")
+![Fill-in the form and and click "Change size" for App Service Plan](assets/screenshots/0_resource_webapp_settings_1.PNG "Fill-in the form and and click Change size for App Service Plan")
 
 6. Select **Dev / Test** plan and **F1** pricing tier, then click **Apply**
 
-![Select "Dev / Test" plan and "F1" pricing tier, then click "Apply"](assets/screenshots/0_resource_webapp_settings_2.png "Select Dev/Test plan and F1 pricing tier, then click Apply")
+![Select "Dev / Test" plan and "F1" pricing tier, then click "Apply"](assets/screenshots/0_resource_webapp_settings_2.PNG "Select Dev/Test plan and F1 pricing tier, then click Apply")
 7. Click **Review + create**
 
-![Click "Review and create"](assets/screenshots/0_resource_webapp_settings_3.png "Click Review + create")
+![Click "Review and create"](assets/screenshots/0_resource_webapp_settings_3.PNG "Click Review + create")
 
 8. Verify values and click **Create**
 9. Wait until the deployment of the Web App is complete and click on **Go to resource**  
 10. In your new Web App, on the left panel go to **Settings -> Configuration -> Application Settings**
 11. Click on **+ New application setting**
 
- ![Click New application setting](assets/screenshots/0_resource_webapp_settings_new.png)
+ ![Click New application setting](assets/screenshots/0_resource_webapp_settings_new.PNG)
 
 12. Fill-in the following information:
     - **Setting name**: SCM_DO_BUILD_DURING_DEPLOYMENT
     - **Value**: true
 
-![Setting name is SCM_DO_BUILD_DURING_DEPLOYMENT and value true](assets/screenshots/0_resource_webapp_settings_new_form.png)
+![Setting name is SCM_DO_BUILD_DURING_DEPLOYMENT and value true](assets/screenshots/0_resource_webapp_settings_new_form.PNG)
 
 13. Click **OK**
 14. Click **Save**. This will enable build step when we deploy our NodeJS application later
 
-![Click Save](assets/screenshots/0_resource_webapp_settings_updated_save.png)
+![Click Save](assets/screenshots/0_resource_webapp_settings_updated_save.PNG)
 
 15. **Open** your resource group and verify that you have the following resources: **App Service Plan, App Service, Application Insights and two Custom Vision**
 
-![Open your resource group and verify that you have the following resources: App Service Plan, App Service and two Cognitive Services](assets/screenshots/0_resource_group_list_final.png)
+![Open your resource group and verify that you have the following resources: App Service Plan, App Service and two Cognitive Services](assets/screenshots/0_resource_group_list_final.PNG)
 
 
 ## Train a model in Custom Vision
 
 1. Sign in [Custom Vision](https://www.customvision.ai/) using your Azure account 
 
-![Sign in https://www.customvision.ai/ using created Azure account](assets/screenshots/0_customvision_signin.png)
+![Sign in https://www.customvision.ai/ using created Azure account](assets/screenshots/0_customvision_signin.PNG)
 
 2. Click **New Project**
 
-![Click "New Project"](assets/screenshots/0_customvision_projects_blank.png)
+![Click "New Project"](assets/screenshots/0_customvision_projects_blank.PNG)
 
 3. Fill-in the form 
     - **Name**: RPS
@@ -151,18 +151,18 @@ Outline the file contents of the repository. It helps users navigate the codebas
    
 4. Click **Create project**
 
-![Fill-in the form and click "Create project"](assets/screenshots/0_customvision_projects_new.png)
+![Fill-in the form and click "Create project"](assets/screenshots/0_customvision_projects_new.PNG)
 
 ### Upload and tag images
 
 1. In Custom Vision project click **Add images**
 
-![In Custom Vision project click "Add images"](assets/screenshots/0_customvision_project_addimages.png)
+![In Custom Vision project click "Add images"](assets/screenshots/0_customvision_project_addimages.PNG)
 
 2. **Select** the images and click **Open** to add them
 3. Write an appropriate **Tag** for your images (for example, paper), press **Enter** and click **Upload files**
 
-![Add images, select appropriate tag (e.g. paper) and click "Upload files"](assets/screenshots/0_customvision_project_addimages_paper.png)
+![Add images, select appropriate tag (e.g. paper) and click "Upload files"](assets/screenshots/0_customvision_project_addimages_paper.PNG)
 
 4. Wait until upload is finished
 
@@ -173,11 +173,11 @@ Outline the file contents of the repository. It helps users navigate the codebas
 ### Train a model
 1. In Custom Vision project click on **Train**
 
-![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.png)
+![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.PNG)
 
 2. Select **Quick Training** and click **Train**
 
-![Select "Quick Training" and click "Train"](assets/screenshots/0_customvision_project_train_setup.png)
+![Select "Quick Training" and click "Train"](assets/screenshots/0_customvision_project_train_setup.PNG)
 
 
 3. Wait for training to finish. This process can take a few minutes
@@ -188,17 +188,17 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 1. Click on **Quick Test**
 
-![Click on "Quick Test"](assets/screenshots/0_customvision_project_iteration_quicktest.png)
+![Click on "Quick Test"](assets/screenshots/0_customvision_project_iteration_quicktest.PNG)
 
 2. **Upload** a test image
 
-![Upload test image](assets/screenshots/0_customvision_project_iteration_quicktest_results.png)
+![Upload test image](assets/screenshots/0_customvision_project_iteration_quicktest_results.PNG)
 
 If the prediction of the test image is incorrect, you can correct it and select the right tag.
 
 1. Open **Predictions** tab
 
-![Click on "Predictions"](assets/screenshots/0_customvision_project_iteration_predictions.png)
+![Click on "Predictions"](assets/screenshots/0_customvision_project_iteration_predictions.PNG)
 
 2. **Select** the incorrectly predicted image
 
@@ -206,17 +206,17 @@ If the prediction of the test image is incorrect, you can correct it and select 
 
 3. **Assign** correct tag and click **Save and close**
 
-![Select incorrectly predicted image](assets/screenshots/0_customvision_project_iteration_predictions_detail.png)
+![Select incorrectly predicted image](assets/screenshots/0_customvision_project_iteration_predictions_detail.PNG)
 
 
 ### (Optional) Advanced training
 1. In Custom Vision project click **Train**
 
-![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.png)
+![In Custom Vision project click "Train"](assets/screenshots/0_customvision_project_train.PNG)
 
 2. Select **Advanced Training**, choose **1 hour** for training budget, and click **Train**
 
-![Select "Advanced Training" for 1 hour and click "Train"](assets/screenshots/0_customvision_project_train_setup_adv.png)
+![Select "Advanced Training" for 1 hour and click "Train"](assets/screenshots/0_customvision_project_train_setup_adv.PNG)
 
 3. Wait for training to finish
 
@@ -225,15 +225,15 @@ If the prediction of the test image is incorrect, you can correct it and select 
 ### Publish iteration
 1. Open **Performance** tab, select the finished iteration and click **Publish**
 
-![Open Performance tab, select the finished iteration and click Publish](assets/screenshots/0_customvision_project_iteration_publish.png)
+![Open Performance tab, select the finished iteration and click Publish](assets/screenshots/0_customvision_project_iteration_publish.PNG)
 
 2. Fill-in **Model name**, select **RPSCustomVision_Prediction** as prediction resource and click **Publish**
 
-![Fill-in model name, select "RPSCustomVision_Prediction" as prediction resource and click "Publish"](assets/screenshots/0_customvision_project_iteration_publish_setup_2.png)
+![Fill-in model name, select "RPSCustomVision_Prediction" as prediction resource and click "Publish"](assets/screenshots/0_customvision_project_iteration_publish_setup_2.PNG)
 
 3. Click on **Prediction URL** to see your credentials
 
-![Click on Prediction URL to see your credentials](assets/screenshots/0_customvision_project_iteration_prediction.png)
+![Click on Prediction URL to see your credentials](assets/screenshots/0_customvision_project_iteration_prediction.PNG)
 
 ## Web application code
 Application based on code from [NodeJS app on Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs) example.
