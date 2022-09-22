@@ -8,8 +8,6 @@ Goal:
 1. Sign in [Custom Vision](https://www.customvision.ai/) using your Azure account 
 2. Click **New Project**
 
-![Click "New Project"](assets/screenshots/0_customvision_projects_blank.PNG)
-
 3. Fill-in the form to select a compact pre-trained model
     - **Name**: RPS
     - **Resource**: RPSCustomVision[F0]
