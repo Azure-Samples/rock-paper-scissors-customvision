@@ -92,7 +92,7 @@ function init() {
 
     const submitImageFromCanvas = (canvasElement) => {
         const request = new XMLHttpRequest();
-        request.open('POST', "/predict", true);
+        request.open('POST', "/predict_offline", true);
         request.setRequestHeader('Content-Type', 'application/octet-stream');
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
