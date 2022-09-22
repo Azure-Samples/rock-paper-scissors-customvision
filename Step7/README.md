@@ -5,7 +5,10 @@ Goal:
 
 ## Download the model locally
 
+- When creating Custom Vision project select a Compact pre-trained model (<SCREENSHOT>)
+
 - Press Export
+
 
 ![Press Export](../assets/screenshots/0_export_model_1.png "Press Export")
 
