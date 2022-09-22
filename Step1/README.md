@@ -10,7 +10,7 @@ Local development is the same for all steps:
 4. Open http://localhost:1337
 
 ### Deploy to Azure 
-Azure dseployment is the same for all steps:
+Azure deployment is the same for all steps:
 1. Open "StepN" folder
 2. Run `npm install`
 3. Create zip archive with contents of "StepN" folder

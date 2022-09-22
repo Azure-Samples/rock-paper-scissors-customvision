@@ -18,10 +18,11 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 | File/folder       | Description                                |
 |-------------------|--------------------------------------------|
-| `Step{1-6}`       | Sample source code                        |
-| `.gitignore`      | Define what to ignore at commit time      |
-| `README.md`       | The README file                         |
-| `LICENSE`         | The license for the sample             |
+| `Step{1-7}`       | Sample source code.                        |
+| `.gitignore`      | Define what to ignore at commit time.      |
+| `README.md`       | This README file.                          |
+| `LICENSE`         | The license for the sample.                |
+
 
 ## Prerequisites
 
@@ -263,17 +264,19 @@ Azure deployment is the same for all the steps:
 
 Code changes are described in respective steps:
 
-[Step 1](Step1/README.md)
+- [Step 1](Step1/README.md): After cloning the repository, you can either choose to develop locally or deploy to Azure
 
-[Step 2](Step2/README.md)
+- [Step 2](Step2/README.md): Initalize camera, take a picture, and store it in canvas element
 
-[Step 3](Step3/README.md)
+- [Step 3](Step3/README.md): Submit and receive a picture to `index.js`. Then, submit picture from `index.js` to Custom Vision API. Finally, receive predictions from Custom Vision
 
-[Step 4](Step4/README.md)
+- [Step 4](Step4/README.md): Return best match prediction to client-side and render result to HTML page
 
-[Step 5](Step5/README.md)
+- [Step 5](Step5/README.md): Add AI opponent and show opponents move
 
-[Step 6 (Final)](Step6/README.md)
+- [Step 6](Step6/README.md): Visualize counter and show results
+
+- [Step 7](Step7/README.md): Download the Custom Vision model and use it locally with `tensorflow.js`
 
 
 # Contributing

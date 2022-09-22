@@ -5,24 +5,34 @@ Goal:
 
 ## Download the model locally
 
-- When creating Custom Vision project select a Compact pre-trained model (<SCREENSHOT>)
+1. Sign in [Custom Vision](https://www.customvision.ai/) using your Azure account 
+2. Click **New Project**
+
+3. Fill-in the form to select a compact pre-trained model
+    - **Name**: RPS
+    - **Resource**: RPSCustomVision[F0]
+    - **Project Types**: Classification
+    - **Classification Types**: Multiclass
+    - **Domains**: General (compact)[S1]
 
 ![Project options](../assets/screenshots/0_export_model_0.png "Project options")
 
-- Press Export
+4. Click **Create project**
+5. Follows the steps in [README.md](../README.md) file to [upload and tag images](../README.md#upload-and-tag-images), and [train a model](../README.md#train-a-model)
 
+6. Click **Export**
 
 ![Press Export](../assets/screenshots/0_export_model_1.png "Press Export")
 
-- Select Tensorflow
+7. Select **Tensorflow**
 
 ![Select Tensorflow](../assets/screenshots/0_export_model_2.png "Select Tensorflow")
 
-- Select Tensorflow.js and press Download
+8. Select **Tensorflow.js** and click **Download**
 
 ![Select Tensorflow.js and press Download](../assets/screenshots/0_export_model_3.png "Select Tensorflow.js and press Download")
 
-- Extract all the files in `Step7/tf-js-model`
+9. **Extract** all the files in `Step7/tf-js-model`
 
 ## Changes in public/js/app.js
 ```javascript
