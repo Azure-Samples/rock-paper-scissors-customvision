@@ -95,7 +95,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
     - **Resource group**: RPS_ResourceGroup 
     - **Name**: <choose_unique_name>
     - **Publish**: Code
-    - **Runtime stack**: Node 14 LTS (or higher)
+    - **Runtime stack**: Node 16 LTS (or higher)
     - **Operating system**: Windows
     - **Region**: West Europe
    

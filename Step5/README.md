@@ -1,6 +1,6 @@
 # Step5
 Goal:
-* Add AI opponent
+* Add "AI" opponent
 * Show opponents move
 
 ## Changes in public/index.html
@@ -9,7 +9,7 @@ Goal:
     <div class="appPanel">
         <div class="appResults" id="appResults">
           <div class="answer"><span>User:&nbsp;</span><span class="appUserAnswer value">-</span></div>
-          <div class="answer"><span>AI:&nbsp;</span><span class="appEngineAnswer value">-</span></div>
+          <div class="answer"><span>"AI":&nbsp;</span><span class="appEngineAnswer value">-</span></div>
         </div>
         <div class="appRestart"><button id="appRestartButton" class="appRestartButton hide">NEW GAME</button></div>
     </div>
