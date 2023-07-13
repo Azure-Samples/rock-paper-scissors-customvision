@@ -1,6 +1,6 @@
 {
-    "Key": "05c695ddf17b41be9588d2ff2d1efa10",
-    "PublishedIteration": "Iteration4",
-    "ProjectId": "e75298bb-3275-4f77-9148-18b0e4f06bb4",
-    "Endpoint": "https://rpscustomvision-prediction.cognitiveservices.azure.com"
+    "Key": "<PUT_YOUR_KEY_HERE>",
+    "PublishedIteration": "<PUT_PUBLISHED_ITERATION_HERE>",
+    "ProjectId": "<PUT_PROJECT_ID_HERE>",
+    "Endpoint": "<PUT_PREDICTION_ENDPOINT_HERE>"
 }
